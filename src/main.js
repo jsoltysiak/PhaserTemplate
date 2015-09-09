@@ -1,11 +1,10 @@
-var SpaceHipster = SpaceHipster || {};
+var GameName = GameName || {};
 
-SpaceHipster.game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, '');
+GameName.game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, '');
 
-SpaceHipster.game.state.add('Boot', SpaceHipster.Boot);
-//uncomment these as we create them through the tutorial
-//SpaceHipster.game.state.add('Preload', SpaceHipster.Preload);
-//SpaceHipster.game.state.add('MainMenu', SpaceHipster.MainMenu);
-//SpaceHipster.game.state.add('Game', SpaceHipster.Game);
+GameName.game.state.add('Boot', GameName.Boot);
+//GameName.game.state.add('Preload', GameName.Preload);
+//GameName.game.state.add('MainMenu', GameName.MainMenu);
+//GameName.game.state.add('Game', GameName.Game);
 
-SpaceHipster.game.state.start('Boot');
+GameName.game.state.start('Boot');
